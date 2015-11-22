@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Indecisiveness Helper</title>
+  <link rel="stylesheet" href="assets/main.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.min.css">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Indecisiveness Helper</h1>
+      <p>Having trouble deciding what to do today? Do you have several options? Use the
+        <strong>Indecisiveness Helper</strong> to pick one for you.</p>
+    </header>
+    <main>
+      <section>
+        <h2>1. What are the options?</h2>
+
+        <div class="form">
+          <div class="col-xs-4">
+            <input type="text" class="form-control" id="option" autofocus>
+          </div>
+
+          <button id="add" class="btn btn-primary">Add</button>
+          <button id="reset" class="btn btn-danger">Start Over</button>
+        </div>
+      </section>
+      <section>
+        <h2>2. Pick For Me</h2>
+        <button id="pick" disabled="true" class="btn btn-success">Pick</button>
+      </section>
+      <section>
+        <h2>3. Result</h3>
+          <ul id="optionsList" class="list">
+          </ul>
+      </section>
+      <aside>
+        <div id="validationModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Oops</h4>
+              </div>
+              <div class="modal-body">
+                Please enter an option to be added.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+  <footer>
+  </footer>
+  <script src="assets/jquery-1.11.3.min.js"></script>
+  <script src="assets/main.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  </script>
+</body>
+
+</html>

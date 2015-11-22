@@ -1,0 +1,21 @@
+ul {
+  list-style-type: none;
+}
+
+#optionsList.list li .remove {
+  display: none;
+}
+
+#optionsList.list li:hover .remove {
+  display: inline;
+  margin-left: 5px;
+  color: #265a88;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#optionsList .selected {
+  font-weight: bold;
+  font-size:18px;
+  color: #FF0000;
+}

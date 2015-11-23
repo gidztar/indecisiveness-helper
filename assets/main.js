@@ -46,10 +46,9 @@ $(function() {
   function selectListItem(index) {
     var listItems = $("#optionsList li");
     listItems.eq(index).addClass("selected");
+    $("#optionsList li span").addClass("hide");
     // remove click bindings
     listItems.unbind("click");
-    // remove class that exposes hover selector
-    optionsList.removeClass("list");
 
     // disable buttons
     add.attr("disabled", true);

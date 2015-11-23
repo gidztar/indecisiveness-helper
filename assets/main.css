@@ -2,7 +2,7 @@ ul {
   list-style-type: none;
 }
 
-#optionsList.list li .remove {
+#optionsList.list li .remove, #optionsList.list li .hide  {
   display: none;
 }
 
